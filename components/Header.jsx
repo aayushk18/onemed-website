@@ -131,7 +131,7 @@ export default function Header() {
           </nav>
 
           <button
-              onClick={() =>{  window.location.href = 'https://onemedtutor.online/login';}}
+              onClick={() =>{  window.location.href = 'https://onemedtutor.online/login';}} 
               className="ml-4 px-6 py-2 bg-blue-600 hidden lg:flex text-white rounded-lg hover:bg-blue-700 font-medium"
             >
               Login
