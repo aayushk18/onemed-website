@@ -37,11 +37,7 @@ export default function Home() {
   ];
 
   const courses = [
-    {
-      title: "NEET Preparation",
-      description: "Comprehensive NEET UG & PG preparation with expert faculty",
-      category: "Entrance Exam",
-    },
+ 
     {
       title: "MBBS Complete Course",
       description: "All years MBBS curriculum with clinical focus",
@@ -60,13 +56,7 @@ export default function Home() {
   ];
 
   const testimonials = [
-    {
-      name: "Priya Sharma",
-      exam: "NEET PG",
-      text:
-        "OneMed Tutor helped me crack NEET PG with AIR 156. The personalized teaching and doubt clearing sessions were invaluable.",
-      rating: 5,
-    },
+  
     {
       name: "Rahul Verma",
       exam: "MBBS 2nd Year",

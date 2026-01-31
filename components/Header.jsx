@@ -27,7 +27,7 @@ export default function Header() {
   ];
 
   const coursesSubmenu = [
-    "NEET (UG / PG)",
+  
     "MBBS (All Years)",
     "Nursing",
     "USMLE / PLAB",
@@ -39,12 +39,10 @@ export default function Header() {
 
   const resourcesSubmenu = [
     "Notes (PDF)",
-    "Recorded Lectures",
     "Practice Questions",
     "MCQs",
-    "Case Studies",
     "Previous Year Questions",
-    "Study Plans"
+    
   ];
 
   return (
