@@ -57,8 +57,8 @@ export default function Header() {
             <Image
               src="/onemed_pic.jpg"
               alt="OneMed Tutor"
-              width={160}
-              height={80}
+              width={100}
+              height={50}
               priority
             />
           </div>
@@ -90,7 +90,7 @@ export default function Header() {
                 {/* Courses Dropdown */}
                 {item.name === "Courses" && coursesDropdownOpen && (
                   <div
-                    className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 border"
+                    className="absolute left-0   w-64 bg-white rounded-lg shadow-xl py-2 "
                     onMouseEnter={() => setCoursesDropdownOpen(true)}
                     onMouseLeave={() => setCoursesDropdownOpen(false)}
                   >
@@ -109,7 +109,7 @@ export default function Header() {
                 {/* Resources Dropdown */}
                 {item.name === "Resources" && resourcesDropdownOpen && (
                   <div
-                    className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 border"
+                    className="absolute left-0  w-56 bg-white rounded-lg shadow-xl py-2 "
                     onMouseEnter={() => setResourcesDropdownOpen(true)}
                     onMouseLeave={() => setResourcesDropdownOpen(false)}
                   >
@@ -127,13 +127,15 @@ export default function Header() {
               </div>
             ))}
 
-            <button
+           
+          </nav>
+
+          <button
               onClick={() => router.push("/login")}
-              className="ml-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
+              className="ml-4 px-6 py-2 bg-blue-600 hidden lg:flex text-white rounded-lg hover:bg-blue-700 font-medium"
             >
               Login
             </button>
-          </nav>
 
           {/* Mobile Menu Button */}
           <button
