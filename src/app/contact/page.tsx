@@ -28,20 +28,20 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      details: 'contact@onemedtutor.com',
-      link: 'mailto:contact@onemedtutor.com',
+      details: 'onemedtutor@gmail.com',
+      link: 'mailto:onemedtutor@gmail.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 98765 43210',
-      link: 'tel:+919876543210',
+      details: '+91 92129 48971',
+      link: 'tel:+919212948971',
     },
     {
       icon: MessageCircle,
       title: 'WhatsApp',
-      details: '+91 98765 43210',
-      link: 'https://wa.me/919876543210',
+      details: '+91 92129 48971',
+      link: 'https://wa.me/919212948971',
     },
     {
       icon: Clock,
@@ -215,7 +215,7 @@ export default function Contact() {
                 ))}
               </div>
 
-              <div className="bg-blue-50 rounded-xl p-6">
+              {/* <div className="bg-blue-50 rounded-xl p-6">
                 <MapPin className="w-8 h-8 text-blue-600 mb-3" />
                 <h3 className="font-semibold text-gray-900 mb-2">Our Office</h3>
                 <p className="text-gray-700">
@@ -224,7 +224,7 @@ export default function Contact() {
                   Mumbai, Maharashtra 400001<br />
                   India
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 

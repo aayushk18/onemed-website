@@ -120,11 +120,11 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span>contact@onemedtutor.com</span>
+                <span>onemedtutor@gmail.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span>+91 98765 43210</span>
+                <span>+91 92129 48971</span>
               </li>
             </ul>
           </div>
