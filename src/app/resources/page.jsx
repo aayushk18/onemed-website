@@ -180,40 +180,372 @@ const medicalPdfs = [
     category_name: "Physiology",
     sub_categories: [
       {
+        sub_category: "General Physiology",
+        pdfs: [
+          {
+            name: "Cell Membrane & Transport",
+            description: "Structure and transport mechanisms of cell membrane",
+            date: "2025-01-12",
+            size: "2.1 MB",
+            link: "/pdfs/physiology/cell-membrane.pdf",
+          },
+          {
+            name: "Body Fluid Compartments",
+            description: "Distribution and regulation of body fluids",
+            date: "2025-01-12",
+            size: "1.9 MB",
+            link: "/pdfs/physiology/body-fluids.pdf",
+          },
+          {
+            name: "Homeostasis",
+            description: "Physiological mechanisms maintaining internal balance",
+            date: "2025-01-13",
+            size: "1.7 MB",
+            link: "/pdfs/physiology/homeostasis.pdf",
+          },
+          {
+            name: "Nerve & Muscle Physiology",
+            description: "Basics of nerve conduction and muscle contraction",
+            date: "2025-01-14",
+            size: "2.8 MB",
+            link: "/pdfs/physiology/nerve-muscle.pdf",
+          },
+          {
+            name: "Action Potential",
+            description: "Generation and propagation of action potential",
+            date: "2025-01-14",
+            size: "2.2 MB",
+            link: "/pdfs/physiology/action-potential.pdf",
+          },
+          {
+            name: "Receptors",
+            description: "Types and mechanisms of physiological receptors",
+            date: "2025-01-15",
+            size: "1.6 MB",
+            link: "/pdfs/physiology/receptors.pdf",
+          },
+        ],
+      },
+  
+      {
+        sub_category: "Blood",
+        pdfs: [
+          {
+            name: "RBC, WBC & Platelets",
+            description: "Structure and functions of blood cells",
+            date: "2025-01-16",
+            size: "2.4 MB",
+            link: "/pdfs/physiology/blood-cells.pdf",
+          },
+          {
+            name: "Hemoglobin",
+            description: "Structure, function, and regulation of hemoglobin",
+            date: "2025-01-16",
+            size: "1.8 MB",
+            link: "/pdfs/physiology/hemoglobin.pdf",
+          },
+          {
+            name: "Anemia",
+            description: "Types, causes, and physiological basis of anemia",
+            date: "2025-01-17",
+            size: "2.3 MB",
+            link: "/pdfs/physiology/anemia.pdf",
+          },
+          {
+            name: "Blood Groups",
+            description: "ABO and Rh blood group systems",
+            date: "2025-01-17",
+            size: "1.5 MB",
+            link: "/pdfs/physiology/blood-groups.pdf",
+          },
+          {
+            name: "Hemostasis",
+            description: "Physiology of bleeding control",
+            date: "2025-01-18",
+            size: "2.0 MB",
+            link: "/pdfs/physiology/hemostasis.pdf",
+          },
+          {
+            name: "Coagulation",
+            description: "Clotting factors and coagulation pathways",
+            date: "2025-01-18",
+            size: "2.6 MB",
+            link: "/pdfs/physiology/coagulation.pdf",
+          },
+        ],
+      },
+  
+      {
         sub_category: "Cardiovascular System",
         pdfs: [
           {
             name: "Cardiac Cycle",
-            description: "Events of cardiac cycle",
-            date: "2025-01-18",
-            size: "2.4 MB",
+            description: "Phases of cardiac cycle and pressure changes",
+            date: "2025-01-19",
+            size: "2.7 MB",
             link: "/pdfs/physiology/cardiac-cycle.pdf",
           },
           {
             name: "Heart Sounds",
-            description: "Normal and abnormal heart sounds",
+            description: "Origin and clinical significance of heart sounds",
             date: "2025-01-19",
-            size: "2.0 MB",
+            size: "1.6 MB",
             link: "/pdfs/physiology/heart-sounds.pdf",
           },
           {
-            name: "ECG Interpretation",
-            description: "Basics of electrocardiography",
+            name: "ECG",
+            description: "Basics of electrocardiography interpretation",
             date: "2025-01-20",
-            size: "2.6 MB",
+            size: "2.9 MB",
             link: "/pdfs/physiology/ecg.pdf",
           },
           {
             name: "Blood Pressure",
-            description: "Regulation of arterial blood pressure",
-            date: "2025-01-21",
+            description: "Regulation and measurement of blood pressure",
+            date: "2025-01-20",
             size: "2.2 MB",
             link: "/pdfs/physiology/blood-pressure.pdf",
+          },
+          {
+            name: "Regulation of Circulation",
+            description: "Neural and hormonal control of circulation",
+            date: "2025-01-21",
+            size: "2.5 MB",
+            link: "/pdfs/physiology/circulation-regulation.pdf",
+          },
+        ],
+      },
+  
+      {
+        sub_category: "Respiratory System",
+        pdfs: [
+          {
+            name: "Lung Volumes",
+            description: "Spirometry and lung volume measurements",
+            date: "2025-01-22",
+            size: "2.1 MB",
+            link: "/pdfs/physiology/lung-volumes.pdf",
+          },
+          {
+            name: "Gas Exchange",
+            description: "Diffusion of gases across respiratory membrane",
+            date: "2025-01-22",
+            size: "2.3 MB",
+            link: "/pdfs/physiology/gas-exchange.pdf",
+          },
+          {
+            name: "Transport of O₂ & CO₂",
+            description: "Mechanisms of oxygen and carbon dioxide transport",
+            date: "2025-01-23",
+            size: "2.6 MB",
+            link: "/pdfs/physiology/gas-transport.pdf",
+          },
+          {
+            name: "Regulation of Respiration",
+            description: "Neural and chemical control of breathing",
+            date: "2025-01-23",
+            size: "2.0 MB",
+            link: "/pdfs/physiology/respiration-regulation.pdf",
+          },
+          {
+            name: "Hering–Breuer Reflex",
+            description: "Protective reflex in respiratory physiology",
+            date: "2025-01-24",
+            size: "1.4 MB",
+            link: "/pdfs/physiology/hering-breuer.pdf",
+          },
+        ],
+      },
+  
+      {
+        sub_category: "CNS",
+        pdfs: [
+          {
+            name: "Reflexes",
+            description: "Types and physiology of reflex actions",
+            date: "2025-01-25",
+            size: "1.9 MB",
+            link: "/pdfs/physiology/reflexes.pdf",
+          },
+          {
+            name: "Sensory System",
+            description: "Physiology of sensory pathways",
+            date: "2025-01-25",
+            size: "2.4 MB",
+            link: "/pdfs/physiology/sensory-system.pdf",
+          },
+          {
+            name: "Motor System",
+            description: "Motor pathways and voluntary movement control",
+            date: "2025-01-26",
+            size: "2.7 MB",
+            link: "/pdfs/physiology/motor-system.pdf",
+          },
+          {
+            name: "Basal Ganglia & Cerebellum",
+            description: "Role in movement coordination",
+            date: "2025-01-26",
+            size: "2.8 MB",
+            link: "/pdfs/physiology/basal-ganglia.pdf",
+          },
+          {
+            name: "Sleep & EEG",
+            description: "Stages of sleep and EEG patterns",
+            date: "2025-01-27",
+            size: "2.2 MB",
+            link: "/pdfs/physiology/sleep-eeg.pdf",
+          },
+        ],
+      },
+  
+      {
+        sub_category: "Renal Physiology",
+        pdfs: [
+          {
+            name: "Nephron",
+            description: "Structure and function of nephron",
+            date: "2025-01-28",
+            size: "2.1 MB",
+            link: "/pdfs/physiology/nephron.pdf",
+          },
+          {
+            name: "GFR",
+            description: "Glomerular filtration rate and regulation",
+            date: "2025-01-28",
+            size: "1.8 MB",
+            link: "/pdfs/physiology/gfr.pdf",
+          },
+          {
+            name: "Tubular Reabsorption",
+            description: "Mechanisms of tubular transport",
+            date: "2025-01-29",
+            size: "2.3 MB",
+            link: "/pdfs/physiology/tubular-reabsorption.pdf",
+          },
+          {
+            name: "Acid–Base Balance",
+            description: "Renal regulation of acid-base status",
+            date: "2025-01-29",
+            size: "2.0 MB",
+            link: "/pdfs/physiology/acid-base.pdf",
+          },
+          {
+            name: "Micturition",
+            description: "Physiology of urine storage and voiding",
+            date: "2025-01-30",
+            size: "1.5 MB",
+            link: "/pdfs/physiology/micturition.pdf",
+          },
+        ],
+      },
+  
+      {
+        sub_category: "Gastrointestinal Physiology",
+        pdfs: [
+          {
+            name: "Saliva",
+            description: "Composition and functions of saliva",
+            date: "2025-01-31",
+            size: "1.4 MB",
+            link: "/pdfs/physiology/saliva.pdf",
+          },
+          {
+            name: "Gastric Secretion",
+            description: "Mechanism and regulation of gastric juice",
+            date: "2025-01-31",
+            size: "2.2 MB",
+            link: "/pdfs/physiology/gastric-secretion.pdf",
+          },
+          {
+            name: "Pancreatic Juice & Bile",
+            description: "Digestive secretions of pancreas and liver",
+            date: "2025-02-01",
+            size: "2.5 MB",
+            link: "/pdfs/physiology/pancreatic-bile.pdf",
+          },
+          {
+            name: "Digestion & Absorption",
+            description: "Process of nutrient digestion and absorption",
+            date: "2025-02-01",
+            size: "2.7 MB",
+            link: "/pdfs/physiology/digestion-absorption.pdf",
+          },
+        ],
+      },
+  
+      {
+        sub_category: "Endocrine",
+        pdfs: [
+          {
+            name: "Hypothalamus–Pituitary Axis",
+            description: "Central control of endocrine system",
+            date: "2025-02-02",
+            size: "2.6 MB",
+            link: "/pdfs/physiology/hypothalamus-pituitary.pdf",
+          },
+          {
+            name: "Thyroid & Parathyroid",
+            description: "Hormones and physiological functions",
+            date: "2025-02-02",
+            size: "2.1 MB",
+            link: "/pdfs/physiology/thyroid-parathyroid.pdf",
+          },
+          {
+            name: "Adrenal Gland",
+            description: "Cortex and medulla hormone physiology",
+            date: "2025-02-03",
+            size: "2.3 MB",
+            link: "/pdfs/physiology/adrenal.pdf",
+          },
+          {
+            name: "Pancreas & Growth Hormone",
+            description: "Endocrine pancreas and growth hormone",
+            date: "2025-02-03",
+            size: "2.0 MB",
+            link: "/pdfs/physiology/pancreas-gh.pdf",
+          },
+        ],
+      },
+  
+      {
+        sub_category: "Reproductive Physiology",
+        pdfs: [
+          {
+            name: "Male Reproduction",
+            description: "Physiology of male reproductive system",
+            date: "2025-02-04",
+            size: "2.2 MB",
+            link: "/pdfs/physiology/male-reproduction.pdf",
+          },
+          {
+            name: "Female Menstrual Cycle",
+            description: "Hormonal regulation of menstrual cycle",
+            date: "2025-02-04",
+            size: "2.5 MB",
+            link: "/pdfs/physiology/menstrual-cycle.pdf",
+          },
+          {
+            name: "Pregnancy & Lactation",
+            description: "Physiology of pregnancy and milk production",
+            date: "2025-02-05",
+            size: "2.8 MB",
+            link: "/pdfs/physiology/pregnancy-lactation.pdf",
+          },
+          {
+            name: "Contraception",
+            description: "Physiological basis of contraceptive methods",
+            date: "2025-02-05",
+            size: "1.6 MB",
+            link: "/pdfs/physiology/contraception.pdf",
           },
         ],
       },
     ],
   },
+  
+  
+
+
   {
     category_name: "Biochemistry",
     sub_categories: [
