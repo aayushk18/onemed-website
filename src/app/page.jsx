@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import {
+ 
   BookOpen,
   Video,
   Users,
@@ -9,6 +10,7 @@ import {
   Star,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
@@ -76,19 +78,33 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-20 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Master Medical Concepts with{" "}
-            <span className="text-blue-600">OneMed Tutor</span>
+      <section className="relative h-[90vh] w-full overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src="/coverpic.jpg"
+        alt="OneMed Tutor Hero"
+        fill
+        priority
+        className="object-cover object-right md:object-center"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 md:bg-transparent" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6">
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <h1 className="text-4xl md:text-6xl font-bold text-white md:text-gray-900 mb-6">
+            Master Your Concepts with{' '}
+            <span className="text-blue-400">OneMed Tutor</span>
           </h1>
 
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-200 md:text-gray-600 mb-8">
             Online tutoring for MBBS, Nursing, NEET, USMLE & Medical Entrance Exams
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <button
               onClick={() => router.push("/courses")}
               className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-semibold text-lg flex items-center justify-center gap-2"
             >
@@ -96,18 +112,21 @@ export default function Home() {
             </button>
 
             <button
-              onClick={() => router.push("/contact")}
+              onClick={() => router.push('/contact')}
               className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition font-semibold text-lg"
             >
               Book a Free Demo
             </button>
           </div>
 
-          <div className="mt-12 text-gray-600 font-medium">
+          <div className="mt-10 text-gray-200 md:text-gray-600 font-medium">
             Trusted by 5,000+ Medical Students
           </div>
         </div>
-      </section>
+
+        <div className="hidden md:block md:w-1/2" />
+      </div>
+    </section>
 
       {/* Why Choose */}
       <section className="py-16 px-4 bg-white">
