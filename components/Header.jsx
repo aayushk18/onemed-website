@@ -57,7 +57,7 @@ export default function Header() {
             <Image
               src="/onemed_pic.jpg"
               alt="OneMed Tutor"
-              width={100}
+              width={80}
               height={50}
               priority
             />
