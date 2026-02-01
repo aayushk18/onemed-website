@@ -132,7 +132,7 @@ export default function Header() {
 
           <button
               onClick={() =>{  window.location.href = 'https://onemedtutor.online/login';}} 
-              className="ml-4 px-6 py-2 bg-blue-600 hidden lg:flex text-white rounded-lg hover:bg-blue-700 font-medium"
+              className="ml-4 px-6 py-2 bg-blue-500 hidden lg:flex text-white rounded-lg hover:bg-blue-600 font-medium"
             >
               Login
             </button>
@@ -168,7 +168,7 @@ export default function Header() {
 
             <button
               onClick={() =>{  window.location.href = 'https://onemedtutor.online/login';}} 
-              className="block w-full mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-medium"
+              className="block w-full mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg font-medium"
             >
               Login
             </button>

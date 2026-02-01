@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link
               href="/"
-              className="flex items-center space-x-2 text-blue-500"
+              className="flex items-center space-x-2 text-blue-400"
             >
               <Stethoscope className="h-8 w-8" />
               <span className="text-xl font-bold ">

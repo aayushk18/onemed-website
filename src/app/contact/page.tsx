@@ -76,7 +76,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16 px-4">
+      <section className="bg-blue-500 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl text-blue-100">
@@ -178,7 +178,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold flex items-center justify-center space-x-2"
+                  className="w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-semibold flex items-center justify-center space-x-2"
                 >
                   <Send className="w-5 h-5" />
                   <span>Send Message</span>
@@ -193,7 +193,7 @@ export default function Contact() {
                   <div key={index} className="bg-white rounded-xl shadow-md p-6">
                     <div className="flex items-start space-x-4">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                        <div className="w-12 h-12 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center">
                           <info.icon className="w-6 h-6" />
                         </div>
                       </div>
@@ -202,7 +202,7 @@ export default function Contact() {
                         {info.link ? (
                           <a
                             href={info.link}
-                            className="text-blue-600 hover:text-blue-700"
+                            className="text-blue-500 hover:text-blue-600"
                           >
                             {info.details}
                           </a>
@@ -234,7 +234,7 @@ export default function Contact() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {faqs.map((faq, index) => (
-                <div key={index} className="border-l-4 border-blue-600 pl-4">
+                <div key={index} className="border-l-4 border-blue-500 pl-4">
                   <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
                   <p className="text-gray-600 text-sm">{faq.answer}</p>
                 </div>

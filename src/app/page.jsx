@@ -106,14 +106,14 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <button
               onClick={() => router.push("/courses")}
-              className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-semibold text-lg flex items-center justify-center gap-2"
+              className="px-8 py-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-semibold text-lg flex items-center justify-center gap-2"
             >
               Start Learning <ArrowRight className="w-5 h-5" />
             </button>
 
             <button
               onClick={() => router.push('/contact')}
-              className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition font-semibold text-lg"
+              className="px-8 py-4 bg-white text-blue-500 border-2 border-blue-500 rounded-lg hover:bg-blue-50 transition font-semibold text-lg"
             >
               Book a Free Demo
             </button>
@@ -141,7 +141,7 @@ export default function Home() {
                 key={index}
                 className="text-center p-6 rounded-xl bg-blue-50 hover:bg-blue-100 transition"
               >
-                <div className="inline-flex w-16 h-16 items-center justify-center bg-blue-600 text-white rounded-full mb-4">
+                <div className="inline-flex w-16 h-16 items-center justify-center bg-blue-500 text-white rounded-full mb-4">
                   <item.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
@@ -224,7 +224,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-blue-600 text-white">
+      <section className="py-16 px-4 bg-blue-500 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Medical Journey?
