@@ -182,7 +182,7 @@ export default function TestsPage() {
 
                   <div className="flex flex-col gap-2 min-w-[180px]">
                     <button
-                      onClick={() => router.push('/login')}
+                        onClick={() =>{  window.location.href = 'https://onemedtutor.online/login';}} 
                       className="bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 font-semibold"
                     >
                       Start Test
