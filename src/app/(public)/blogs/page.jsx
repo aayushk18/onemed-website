@@ -78,14 +78,22 @@ export default function Blogs() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Medical Education Blog</h1>
-          <p className="text-xl text-blue-100">
-            Expert insights, study tips, and medical education guidance
+
+
+
+
+<section className=" bg-gradient-to-br from-blue-400 to-blue-500 text-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold mb-2">
+          Medical Education Blog
+             </h1>
+          <p className="text-blue-100">
+          Expert insights, study tips, and medical education guidance
           </p>
         </div>
       </section>
+
+ 
 
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
@@ -95,7 +103,7 @@ export default function Blogs() {
                 key={index}
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   index === 0
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-blue-400 text-white'
                     : 'bg-white text-gray-700 hover:bg-blue-50'
                 }`}
               >

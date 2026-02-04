@@ -16,9 +16,10 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Top Section */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
+
+
           <div className="space-y-4">
             <Link
               href="/"
@@ -42,20 +43,19 @@ export default function Footer() {
               <Link href="#" className="hover:text-blue-400">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="hover:text-blue-400">
+              <Link href="https://www.instagram.com/onemedtutor" className="hover:text-blue-400">
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link href="#" className="hover:text-blue-400">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="hover:text-blue-400">
+              <Link href="https://www.youtube.com/@OneMedtutor" className="hover:text-blue-400">
                 <Youtube className="h-5 w-5" />
               </Link>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
+           <div>
             <h3 className="text-white font-semibold mb-4">
               Quick Links
             </h3>
@@ -66,13 +66,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/tutors" className="hover:text-blue-400">
-                  Tutors
+                <Link href="/tests" className="hover:text-blue-400">
+                  Tests and Practices
                 </Link>
               </li>
               <li>
-                <Link href="/classes" className="hover:text-blue-400">
-                  Live Classes
+                <Link href="/tutors" className="hover:text-blue-400">
+                  Tutors
                 </Link>
               </li>
               <li>
@@ -88,8 +88,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Policies */}
-          <div>
+           <div>
             <h3 className="text-white font-semibold mb-4">
               Policies
             </h3>
@@ -112,8 +111,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
+           <div>
             <h3 className="text-white font-semibold mb-4">
               Contact Us
             </h3>
@@ -130,8 +128,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
+         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
           <p>© 2026 OneMed Tutor. All rights reserved.</p>
           <p className="mt-2 sm:mt-0">
             Designed for medical excellence 🩺

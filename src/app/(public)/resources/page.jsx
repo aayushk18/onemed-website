@@ -827,7 +827,7 @@ export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-blue-400 text-white py-12 px-4">
+      <section className="  bg-gradient-to-br from-blue-400 to-blue-500 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-2">Study Resources</h1>
           <p className="text-blue-100">

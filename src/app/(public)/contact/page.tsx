@@ -80,7 +80,7 @@ export default function Contact() {
 
 
 
-<section className="bg-blue-400 text-white py-12 px-4">
+<section className="  bg-gradient-to-br from-blue-400 to-blue-500 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
           <p className="text-blue-100">
