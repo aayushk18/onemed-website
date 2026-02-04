@@ -46,7 +46,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <section className="bg-blue-500 text-white py-16 px-4">
+      <section className="bg-blue-400 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About OneMed Tutor</h1>
           <p className="text-xl text-blue-100">
@@ -60,7 +60,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-500 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-400 rounded-full mb-4">
                   <stat.icon className="w-8 h-8" />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
@@ -74,7 +74,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div className="bg-white rounded-xl shadow-md p-8">
               <div className="flex items-center space-x-3 mb-4">
-                <Target className="w-8 h-8 text-blue-500" />
+                <Target className="w-8 h-8 text-blue-400" />
                 <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -87,7 +87,7 @@ export default function About() {
 
             <div className="bg-white rounded-xl shadow-md p-8">
               <div className="flex items-center space-x-3 mb-4">
-                <Eye className="w-8 h-8 text-blue-500" />
+                <Eye className="w-8 h-8 text-blue-400" />
                 <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -110,7 +110,7 @@ export default function About() {
                   key={index}
                   className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition-shadow"
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-500 rounded-full mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-400 rounded-full mb-4">
                     <value.icon className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">

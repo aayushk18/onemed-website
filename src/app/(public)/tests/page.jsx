@@ -84,7 +84,7 @@ export default function TestsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* HERO */}
-      <section className="bg-blue-500 text-white py-16 px-4">
+      <section className="bg-blue-400 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Test & Practice
@@ -95,7 +95,7 @@ export default function TestsPage() {
         </div>
       </section>
 
-      {/* FEATURES */}
+    
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -104,7 +104,7 @@ export default function TestsPage() {
                 key={index}
                 className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-400 rounded-full mb-4">
                   <feature.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">
@@ -117,7 +117,7 @@ export default function TestsPage() {
             ))}
           </div>
 
-          {/* TEST CATEGORIES */}
+ 
           <h2 className="text-3xl font-bold mb-8">Test Categories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {testCategories.map((category, index) => (
@@ -183,11 +183,11 @@ export default function TestsPage() {
                   <div className="flex flex-col gap-2 min-w-[180px]">
                     <button
                         onClick={() =>{  window.location.href = 'https://onemedtutor.online/login';}} 
-                      className="bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 font-semibold"
+                      className="bg-blue-400 text-white py-2 rounded-lg hover:bg-blue-500 font-semibold"
                     >
                       Start Test
                     </button>
-                    <button className="bg-blue-50 text-blue-500 py-2 rounded-lg hover:bg-blue-100 font-semibold flex items-center justify-center gap-2">
+                    <button className="bg-blue-50 text-blue-400 py-2 rounded-lg hover:bg-blue-100 font-semibold flex items-center justify-center gap-2">
                       <BarChart3 className="w-4 h-4" />
                       View Analysis
                     </button>
@@ -230,7 +230,7 @@ export default function TestsPage() {
               },
             ].map((item, i) => (
               <div key={i} className="bg-blue-50 rounded-xl p-6">
-                <item.icon className="w-8 h-8 text-blue-500 mb-3" />
+                <item.icon className="w-8 h-8 text-blue-400 mb-3" />
                 <h3 className="text-xl font-semibold mb-2">
                   {item.title}
                 </h3>

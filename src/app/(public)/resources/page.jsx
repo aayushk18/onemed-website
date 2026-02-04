@@ -542,10 +542,7 @@ const medicalPdfs = [
       },
     ],
   },
-  
-  
-
-
+   
   {
     category_name: "Biochemistry",
     sub_categories: [
@@ -812,6 +809,7 @@ const medicalPdfs = [
   
 ];
 
+
 export default function ResourcesPage() {
   const [activeCategory, setActiveCategory] = useState(0);
   const [activeSubCategory, setActiveSubCategory] = useState(0);
@@ -829,7 +827,7 @@ export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-blue-500 text-white py-12 px-4">
+      <section className="bg-blue-400 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-2">Study Resources</h1>
           <p className="text-blue-100">
@@ -853,7 +851,7 @@ export default function ResourcesPage() {
               }}
               className={`w-full text-left px-4 py-2 rounded-lg transition ${
                 activeCategory === index
-                  ? "bg-blue-500 text-white"
+                  ? "bg-blue-400 text-white"
                   : "hover:bg-blue-50 text-gray-700"
               }`}
             >
@@ -872,7 +870,7 @@ export default function ResourcesPage() {
                 onClick={() => setActiveSubCategory(index)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
                   activeSubCategory === index
-                    ? "bg-blue-500 text-white"
+                    ? "bg-blue-400 text-white"
                     : "bg-white shadow hover:border-blue-400"
                 }`}
               >
@@ -890,7 +888,7 @@ export default function ResourcesPage() {
               >
                 <div className="flex justify-between">
                   <div className="flex space-x-3">
-                    <FileText className="w-6 h-6 text-blue-500 mt-1" />
+                    <FileText className="w-6 h-6 text-blue-400 mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900">
                         {pdf.name}
@@ -907,7 +905,7 @@ export default function ResourcesPage() {
                   <a
                     href={pdf.link}
                     download
-                    className="text-blue-500 hover:text-blue-700"
+                    className="text-blue-400 hover:text-blue-500"
                   >
                     <Download className="w-5 h-5" />
                   </a>
