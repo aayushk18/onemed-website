@@ -160,16 +160,21 @@ export default function CoursesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-blue-400 text-white py-16 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Our Courses
+
+      
+
+<section className="bg-blue-400 text-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold mb-2">
+          Our Courses
           </h1>
-          <p className="text-xl text-blue-100">
-            Expert-designed courses for every stage of your medical journey
+          <p className="text-blue-100">
+          Expert-designed courses for every stage of your medical journey
           </p>
         </div>
       </section>
+ 
+
 
       {/* Courses */}
       <section className="py-12 px-4">

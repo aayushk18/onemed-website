@@ -84,16 +84,19 @@ export default function TestsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* HERO */}
-      <section className="bg-blue-400 text-white py-16 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Test & Practice
+
+      
+<section className="bg-blue-400 text-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold mb-2">
+          Test & Practice
           </h1>
-          <p className="text-xl text-blue-100">
-            Sharpen your skills with comprehensive mock tests and practice questions
+          <p className="text-blue-100">
+          Sharpen your skills with comprehensive mock tests and practice questions
           </p>
         </div>
       </section>
+
 
     
       <section className="py-12 px-4">
