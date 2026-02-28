@@ -14,3 +14,17 @@ export const useAuthStore = create((set) => ({
 
   logout: () => set({ user: null }),
 }));
+
+
+
+export const useAdminStore = create((set) => ({
+
+  login: async (data) => {
+    set({ loading: true });
+    const user = await loginUser(data);
+    set({ user, loading: false });
+  },
+
+  logout: () => set({ user: null }),
+}));
+
