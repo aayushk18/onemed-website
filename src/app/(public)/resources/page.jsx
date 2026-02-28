@@ -74,6 +74,8 @@ export default function ResourcesPage() {
 
       if (Array.isArray(data.data)) {
         const filteredData = filterWebViewData(data.data);
+
+        console.log(filteredData);
         setMedicalPdfs(filteredData);
       }
     } catch (error) {
