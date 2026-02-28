@@ -10,8 +10,6 @@ export async function POST(req) {
 
         const { name, email, phone, subject, message } = body;
 
-        console.log(name, email, phone, subject, message);
-
         await connectDB();
 
         const enquiry = await Enquiry.create({

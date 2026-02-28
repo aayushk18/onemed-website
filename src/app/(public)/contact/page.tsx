@@ -1,6 +1,5 @@
 "use client"
 
-import { log } from 'console';
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle, CheckCircle2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -93,7 +92,6 @@ export default function Contact() {
         phone: `${countryCode}${phoneNumber}`,
       };
 
-      console.log(payload);
 
       const res = await fetch("/api/enquiries", {
         method: "POST",
