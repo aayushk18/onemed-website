@@ -117,9 +117,34 @@ export default function ResourcesPage() {
       {loading ? (
 
 
-        <div className="flex justify-center items-center h-screen">
-          <div className="w-12 h-12 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+        <div className="min-h-screen bg-gray-50 px-4 py-16">
+          <div className="max-w-7xl mx-auto">
+            <div className="h-10 w-72 bg-gray-200 rounded-lg animate-pulse mb-6" />
+            <div className="h-5 w-[28rem] bg-gray-200 rounded animate-pulse mb-10" />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
+                >
+                  <div className="h-4 w-24 bg-blue-100 rounded animate-pulse mb-3" />
+                  <div className="h-6 w-40 bg-gray-200 rounded animate-pulse mb-4" />
+                  <div className="space-y-2">
+                    <div className="h-3 w-full bg-gray-200 rounded animate-pulse" />
+                    <div className="h-3 w-5/6 bg-gray-200 rounded animate-pulse" />
+                    <div className="h-3 w-2/3 bg-gray-200 rounded animate-pulse" />
+                  </div>
+                  <div className="h-10 w-28 bg-gray-200 rounded-lg animate-pulse mt-6" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
+
+
+
+
 
       ) : (
 
