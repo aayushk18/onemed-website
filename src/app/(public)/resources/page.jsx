@@ -116,26 +116,32 @@ export default function ResourcesPage() {
 
       {loading ? (
 
-
-        <div className="min-h-screen bg-gray-50 px-4 py-16">
+        <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
           <div className="max-w-7xl mx-auto">
-            <div className="h-10 w-72 bg-gray-200 rounded-lg animate-pulse mb-6" />
-            <div className="h-5 w-[28rem] bg-gray-200 rounded animate-pulse mb-10" />
+            {/* Title skeleton */}
+            <div className="h-9 sm:h-10 w-56 sm:w-72 bg-gray-200 rounded-lg animate-pulse mb-4 sm:mb-6" />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Subtitle skeleton (responsive width) */}
+            <div className="h-4 sm:h-5 w-full max-w-[28rem] bg-gray-200 rounded animate-pulse mb-8 sm:mb-10" />
+
+            {/* Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {Array.from({ length: 8 }).map((_, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
+                  className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 sm:p-6"
                 >
-                  <div className="h-4 w-24 bg-blue-100 rounded animate-pulse mb-3" />
-                  <div className="h-6 w-40 bg-gray-200 rounded animate-pulse mb-4" />
+                  <div className="h-4 w-20 sm:w-24 bg-blue-100 rounded animate-pulse mb-3" />
+
+                  <div className="h-6 w-32 sm:w-40 bg-gray-200 rounded animate-pulse mb-4" />
+
                   <div className="space-y-2">
                     <div className="h-3 w-full bg-gray-200 rounded animate-pulse" />
-                    <div className="h-3 w-5/6 bg-gray-200 rounded animate-pulse" />
+                    <div className="h-3 w-11/12 sm:w-5/6 bg-gray-200 rounded animate-pulse" />
                     <div className="h-3 w-2/3 bg-gray-200 rounded animate-pulse" />
                   </div>
-                  <div className="h-10 w-28 bg-gray-200 rounded-lg animate-pulse mt-6" />
+
+                  <div className="h-10 w-24 sm:w-28 bg-gray-200 rounded-lg animate-pulse mt-6" />
                 </div>
               ))}
             </div>
