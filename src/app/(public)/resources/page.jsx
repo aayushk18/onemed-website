@@ -136,7 +136,7 @@ export default function ResourcesPage() {
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-              Structured study material designed for concept clarity, revision, and
+              Structured study materials for concept clarity, revision, and
               exam-focused preparation
             </h2>
 
