@@ -227,7 +227,7 @@ export default function ResourcesPage() {
                 </p>
                 <p className="text-xs text-gray-600 mt-1 leading-relaxed">
                   These materials are intended for learning, revision, and exam
-                  support within the OME Med Tutor platform.
+                  support within the OneMed Tutor platform.
                 </p>
               </div>
             </aside>
